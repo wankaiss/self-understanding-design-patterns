@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "org.jetbrains.kotlin.jvm") {
+                useVersion "${kotlinVersion}"
+            }
+            if (requested.id.id == "org.jetbrains.kotlin.plugin.spring") {
+                useVersion "${kotlinVersion}"
+            }
+        }
+    }
+}
+
+plugins {
+    id "com.gradle.enterprise" version "3.3.3"
+}
+
+
+rootProject.name = 'design-patterns'
+
+include 'behavioral-patterns'
+include 'strategy'
+include 'behavioral-patterns:strategy'
+findProject(':behavioral-patterns:strategy')?.name = 'strategy'
+
