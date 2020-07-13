@@ -1,4 +1,4 @@
-package com.geralld.test.dpstrategy;
+package com.gerald.test.dpstrategy;
 
 public class ArrayCompositor extends Compositor {
 
