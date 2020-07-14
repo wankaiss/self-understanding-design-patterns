@@ -9,7 +9,8 @@ public class App {
   public static void main(String[] args) {
     ClockTimer clockTimer = new ClockTimer();
     AnalogClockTimer analogClockTimer = new AnalogClockTimer();
-    DigitalClock digitalClock = new DigitalClock(clockTimer);
+    DigitalClock digitalClock = new DigitalClock(analogClockTimer);
     AnalogClock analogClock = new AnalogClock(analogClockTimer);
+    analogClock.updateState();
   }
 }

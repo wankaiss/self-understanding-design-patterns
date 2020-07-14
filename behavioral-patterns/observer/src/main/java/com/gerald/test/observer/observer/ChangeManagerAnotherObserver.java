@@ -18,9 +18,9 @@ public class ChangeManagerAnotherObserver extends Observer {
 
   public void updateState() {
     subject.setState(
-        "Updated from "
-            + this.getClass().getTypeName()
-            + " with subject: "
-            + subject.getClass().getTypeName());
+            "subject.state: Updated from "
+                    + this.getClass().getTypeName()
+                    + " with subject: "
+                    + subject.getClass().getTypeName());
   }
 }
