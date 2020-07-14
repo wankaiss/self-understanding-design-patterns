@@ -28,4 +28,6 @@ include 'behavioral-patterns:strategy'
 findProject(':behavioral-patterns:strategy')?.name = 'strategy'
 include 'behavioral-patterns:state-pattern'
 findProject(':behavioral-patterns:state-pattern')?.name = 'state-pattern'
+include 'behavioral-patterns:observer'
+findProject(':behavioral-patterns:observer')?.name = 'observer'
 
